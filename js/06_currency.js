@@ -6,7 +6,7 @@
     if (confirm("Пссс.. Не хочешь долллары на евро поменять?")) {
 
         let dollars = prompt("Давай, признавайся. Сколько там у тебя $?");
-        let euro = dollars * currency;
+        let euro = Math.round(dollars * currency);
         alert(`Получается, это ${euro} евро`);
     }
 
